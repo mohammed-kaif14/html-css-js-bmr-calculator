@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMR Calculator</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/queries.css">
+</head>
+<body>
+ <div class="hero">
+<div class="hero-head">
+  <h1 class="bmrhead">BMR Calculator</h1>
+</div>
+ <div class="hero-box">
+  <div class="input-field">
+    <div class="age">
+      <label for="age">Age</label>
+      <input type="number" value="age" id="age">
+     </div>
+      <div class="gender">
+        <label for="gender">Gender</label>
+      <select name="gender" id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      </div>
+      <div class="weight">
+        <label for="Weight">Weight (in kg)</label>
+      <input type="number" value="weight" id="weight">
+      </div>
+     <div class="height">
+      <label for="height">Height (in cm)</label>
+      <input type="number" value="height" id="height">
+     </div>
+     <div class="btn">
+      <button id="calcbtn" onclick="calculateBmr()">Calculate</button>
+      <button id="resetbtn" onclick="resetinput()">Reset</button>
+   </div>
+   </div>
+    <div id="result" class="result"></div>
+ </div>
+  <script src="main.js"></script>
+ </div>
+</body> 
+</html>
